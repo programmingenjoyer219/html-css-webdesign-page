@@ -1,0 +1,109 @@
+html {
+    background-color: #37306B;
+}
+
+footer {
+    text-align: right;
+    color: #DCF2F1;
+    margin-top: 150px;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+span {
+    color: #DCF2F1;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 20%;
+}
+
+.tile-image {
+    height: 200px;
+    float: left;
+    margin-right: 25px;
+    border-radius: 5%;
+}
+
+.card {
+    width: 45%;
+    border: 5px dashed #9E4784;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+}
+
+h1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: 'Protest Riot', sans-serif;
+    color: #D27685;
+}
+
+h2 {
+    font-family: 'Protest Riot', sans-serif;
+    color: #D27685;
+}
+
+.card p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #7FC7D9;
+}
+
+@media (max-width: 1024px) {
+    .tile-image {
+        float: none;
+        margin: 0;
+    }
+
+    .inner-container {
+        column-gap: 40px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .inner-container {
+        flex-direction: row;
+        column-gap: 50px;
+    }
+
+    .card {
+        padding: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .outer-container {
+        align-items: center;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .inner-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+}
